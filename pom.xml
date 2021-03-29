@@ -13,6 +13,8 @@
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.2</maven.surefire.version>        
         <karate.version>1.0.0</karate.version>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
     </properties>    
 
     <dependencies>         
@@ -21,7 +23,27 @@
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
             <scope>test</scope>
-        </dependency>		
+        </dependency>	
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+<dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+<dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>cucumber-reporting</artifactId>
+    <version>5.5.2</version>
+</dependency>
+
+	
+    
+      <dependency>
+        <groupId>io.virtualan</groupId>
+        <artifactId>idaithalam</artifactId>
+        <version>1.2.0</version>
+      </dependency>
     </dependencies>
 
     <build>
